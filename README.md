@@ -1,9 +1,7 @@
 TFcmf是一款基于ThinkPHP5+Bootstrap+layui的极速后台开发框架。
 ===============
 
-git filter-branch --force --index-filter \
-'git rm --cached --ignore-unmatch /application/' \
---prune-empty --tag-name-filter cat -- --all
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch TFcmf/application' --prune-empty --tag-name-filter cat -- --all
 ## **主要特性**
 
 * 基于`Auth`验证的权限管理系统
@@ -16,7 +14,7 @@ git filter-branch --force --index-filter \
 
 ## **安装使用**
 
-建议git克隆安装,会经常更新，功能完善。数据库文件在data目录下。
+建议git克隆安装,会经常更新功能和完善。数据库文件在data目录下。
 
 ## **在线演示**
 暂无
