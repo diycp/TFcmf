@@ -36,7 +36,7 @@ TFcmf是一款基于ThinkPHP5+Bootstrap+layui的极速后台开发框架。
 
 ThinkPHP：http://www.thinkphp.cn
 
-layui: http//www.layui.com
+layui：http://www.layui.com
 
 AdminLTE：https://almsaeedstudio.com
 
