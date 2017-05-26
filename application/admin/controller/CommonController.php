@@ -61,7 +61,11 @@ class CommonController extends BaseCotroller
         if (!($controllername == 'file' || $controllername == 'info')) {
             //验证是否有权限
             if (!(in_array($path, config('allow_visit')) || $this->auth->check($path, $this->admin['id']))) {
-                return $this->outInfo(-1, '未授权访问');
+               if ($action_name == 'lists') {
+                    exit('No access：未授权访问');
+                } else {
+                    return $this->outInfo(-1, '未授权访问');
+                }
             }
         }
 

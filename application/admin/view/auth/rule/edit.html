@@ -44,7 +44,7 @@
                 <label class="layui-form-label">状态</label>
                 <div class="layui-input-block">
                     <input type="radio" name="status" value="1" title="启用" <php>if(!isset($info)||$info['status']==1):echo 'checked';endif</php>>
-                    <input type="radio" name="status" value="0" title="禁用">
+                    <input type="radio" name="status" value="0" title="禁用" <php>if(isset($info)||$info['status']==0):echo 'checked';endif</php>>
                 </div>
             </div>
             <div class="layui-inline">
